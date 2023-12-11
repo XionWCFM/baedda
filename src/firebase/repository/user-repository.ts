@@ -10,7 +10,9 @@ export class UserRepository {
     await addDoc(userCollection, {
       userName: 'heloworld',
     });
+    return true;
   }
+
   async getUserByUserId() {
     const userCollection = doc(fireStore, 'user');
     const docRef = await getDoc(userCollection);
