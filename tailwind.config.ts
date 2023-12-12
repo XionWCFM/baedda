@@ -18,7 +18,7 @@ const config: Config = {
       'black-60': '#61677A',
       'black-30': '#D8D9DA',
       'black-10': '#EEEEEE',
-      'gray-10': 'E0E0E0',
+      'gray-10': '#E0E0E0',
       white: '#FFFFFF',
       'negative-30': '#FF9999',
       'negative-60': '#FF6666',
