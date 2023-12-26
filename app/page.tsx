@@ -1,4 +1,4 @@
-import RootPage from '@/src/components/page/root-page';
+import RootPage from '@/src/routes/root';
 
 export default function Home() {
   return <RootPage />;
