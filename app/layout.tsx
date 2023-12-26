@@ -14,7 +14,7 @@ export default async function RootLayout({
 }) {
   return (
     <html suppressHydrationWarning lang="en">
-      <body className=" min-h-screen dark:bg-black-100  transition-colors  duration-500">
+      <body className=" min-h-screen dark:bg-neutral-800  transition-colors  duration-500">
         <Providers>{children}</Providers>
       </body>
     </html>
