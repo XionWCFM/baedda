@@ -1,11 +1,16 @@
 'use client';
 import { Theme } from '@radix-ui/themes';
+import { ThemeProvider } from 'next-themes';
 import React from 'react';
 
 interface ProvidersProps extends React.PropsWithChildren {}
 
 const Providers = ({ children }: ProvidersProps) => {
-  return <Theme>{children}</Theme>;
+  return (
+    <ThemeProvider attribute="class" enableSystem defaultTheme="system">
+      <Theme>{children}</Theme>
+    </ThemeProvider>
+  );
 };
 
 export default Providers;

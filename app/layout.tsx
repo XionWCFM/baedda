@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import '@radix-ui/themes/styles.css';
-import Providers from '@/src/components/provider/Providers';
+import Providers from '@/src/components/providers';
 export const metadata: Metadata = {
   title: 'baedda',
   description: 'baedda',
@@ -13,7 +13,7 @@ export default async function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html suppressHydrationWarning lang="en">
       <body className=" flex flex-col">
         <Providers>{children}</Providers>
       </body>
