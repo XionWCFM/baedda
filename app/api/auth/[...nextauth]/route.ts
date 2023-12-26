@@ -1,4 +1,4 @@
-import { ENV_OBJECT } from '@/src/constant/env';
+import { ENV_OBJECT } from '@/src/constants/env';
 import NextAuth from 'next-auth/next';
 import KakaoProvider from 'next-auth/providers/kakao';
 
