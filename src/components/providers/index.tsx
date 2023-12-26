@@ -8,7 +8,7 @@ interface ProvidersProps extends React.PropsWithChildren {}
 const Providers = ({ children }: ProvidersProps) => {
   return (
     <ThemeProvider attribute="class" enableSystem defaultTheme="system">
-      <Theme>{children}</Theme>
+      <Theme accentColor={'teal'}>{children}</Theme>
     </ThemeProvider>
   );
 };

@@ -14,7 +14,7 @@ export default async function RootLayout({
 }) {
   return (
     <html suppressHydrationWarning lang="en">
-      <body className=" flex flex-col">
+      <body className=" min-h-screen dark:bg-black-100  transition-colors  duration-500">
         <Providers>{children}</Providers>
       </body>
     </html>
