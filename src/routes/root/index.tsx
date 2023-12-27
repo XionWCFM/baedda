@@ -15,25 +15,27 @@ const RootPage = ({}: RootPageProps) => {
       direction={'column'}
       align={'center'}
       justify={'between'}
-      className=" min-h-screen max-h-screen pt-16 pb-12"
+      className=" min-h-screen min-w-full  max-h-screen pt-16 pb-12"
     >
       <Flex direction={'column'} align={'center'}>
         <Heading size={'8'}>Hello Baedda people</Heading>
         <Box className=" mt-8" />
         <Text className="font-bold">지금 바로 배따 테스트를 시작해보세요</Text>
       </Flex>
-      <Flex className=" relative">
-        <Image
-          className="animate-spin"
-          {...ASSET.jamin}
-          height={350}
-          alt={ASSET.jamin.alt}
-        />
-        <Box className=" animate-bounce absolute left-[40%] rounded-full px-4 py-2 bg-red-500 text-white  font-bold ">
+      <Flex className="relative">
+        <Flex className="fixed  top-[50%] translate-x-[-50%] translate-y-[-50%]  left-[50%]">
+          <Image
+            className=" animate-spin"
+            {...ASSET.jamin}
+            alt={ASSET.jamin.alt}
+          />
+        </Flex>
+
+        <Box className=" animate-bounce absolute left-[40%] rounded-full px-4 py-2 bg-orange-400 text-white  font-bold ">
           끼얏호우! 당장 해야갯어!
         </Box>
       </Flex>
-      <Flex className=" w-full px-4">
+      <Flex className=" w-full  px-4">
         <Link className=" w-full" href={'/question'}>
           <Button className=" w-full h-[100px]" radius={'full'} size={'4'}>
             Get Started
