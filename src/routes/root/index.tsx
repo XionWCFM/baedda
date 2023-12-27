@@ -4,6 +4,7 @@ import { useDarkmode } from '@/src/hooks/darkmode';
 import { Box, Button, Flex, Heading, Text } from '@radix-ui/themes';
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 interface RootPageProps {}
 
@@ -15,8 +16,8 @@ const RootPage = ({}: RootPageProps) => {
       justify={'between'}
       className=" min-h-screen pt-16 pb-12"
     >
-      <Flex direction={'column'}>
-        <Heading>Hello Baedda people</Heading>
+      <Flex direction={'column'} align={'center'}>
+        <Heading size={'8'}>Hello Baedda people</Heading>
         <Box className=" mt-8" />
         <Text className="font-bold">지금 바로 배따 테스트를 시작해보세요</Text>
       </Flex>
@@ -27,9 +28,11 @@ const RootPage = ({}: RootPageProps) => {
         </Box>
       </Flex>
       <Flex className=" w-full px-4">
-        <Button className=" w-full h-[100px]" radius={'full'} size={'4'}>
-          Get Started
-        </Button>
+        <Link className=" w-full" href={'/question'}>
+          <Button className=" w-full h-[100px]" radius={'full'} size={'4'}>
+            Get Started
+          </Button>
+        </Link>
       </Flex>
     </Flex>
   );
