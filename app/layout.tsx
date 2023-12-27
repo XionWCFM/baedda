@@ -19,11 +19,10 @@ export default async function RootLayout({
         <Providers>
           <Flex
             direction={'column'}
-            justify={'center'}
             align={'center'}
-            className=" bg-slate-200 dark:bg-slate-200"
+            className=" bg-slate-200 dark:bg-slate-200 min-h-screen"
           >
-            <Flex className=" max-w-[430px] w-full bg-white dark:bg-neutral-800">
+            <Flex className=" max-w-[430px] w-full bg-white min-h-screen dark:bg-neutral-800">
               {children}
             </Flex>
           </Flex>

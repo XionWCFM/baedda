@@ -1,3 +1,4 @@
+'use client';
 import { User } from '@/src/model/user';
 import { createContext, useContext } from 'react';
 

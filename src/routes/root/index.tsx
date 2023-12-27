@@ -15,7 +15,7 @@ const RootPage = ({}: RootPageProps) => {
       direction={'column'}
       align={'center'}
       justify={'between'}
-      className=" min-h-screen pt-16 pb-12"
+      className=" min-h-screen max-h-screen pt-16 pb-12"
     >
       <Flex direction={'column'} align={'center'}>
         <Heading size={'8'}>Hello Baedda people</Heading>
@@ -24,8 +24,9 @@ const RootPage = ({}: RootPageProps) => {
       </Flex>
       <Flex className=" relative">
         <Image
-          className=" animate-spin"
+          className="animate-spin"
           {...ASSET.jamin}
+          height={350}
           alt={ASSET.jamin.alt}
         />
         <Box className=" animate-bounce absolute left-[40%] rounded-full px-4 py-2 bg-red-500 text-white  font-bold ">
