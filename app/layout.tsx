@@ -23,7 +23,7 @@ export default async function RootLayout({
             align={'center'}
             className=" bg-slate-200 dark:bg-slate-200"
           >
-            <Flex className=" max-w-[430px] bg-white dark:bg-neutral-800">
+            <Flex className=" max-w-[430px] w-full bg-white dark:bg-neutral-800">
               {children}
             </Flex>
           </Flex>
