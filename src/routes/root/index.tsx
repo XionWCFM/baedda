@@ -20,7 +20,13 @@ const RootPage = ({}: RootPageProps) => {
       <Flex direction={'column'} align={'center'}>
         <Heading size={'8'}>Hello Baedda people</Heading>
         <Box className=" mt-8" />
-        <Text className="font-bold">지금 바로 배따 테스트를 시작해보세요</Text>
+        <Text className="font-bold">
+          지금 바로{' '}
+          <span className="  text-blue-400 text-3xl font-bold">
+            배따 테스트
+          </span>
+          를 시작해보세요
+        </Text>
       </Flex>
       <Flex className="relative">
         <Flex className="fixed  top-[50%] translate-x-[-50%] translate-y-[-50%]  left-[50%]">
