@@ -1,7 +1,5 @@
 import { createContext, useContext } from 'react';
 
-
-
 export const MbtiContext = createContext<null>(null);
 
 export const MbtiDispatchContext = createContext<null>(null);
