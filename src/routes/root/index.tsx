@@ -5,7 +5,6 @@ import { Box, Button, Flex, Heading, Text } from '@radix-ui/themes';
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useAnimate } from 'framer-motion';
 
 interface RootPageProps {}
 

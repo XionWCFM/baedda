@@ -1,11 +1,13 @@
 'use client';
 import { User } from '@/src/model/user';
+import React from 'react';
 import { createContext, useContext } from 'react';
 
 export const UserContext = createContext<User | null>(null);
 
-export const UserDispatchContext =
-  createContext<React.SetStateAction<User> | null>(null);
+export const UserDispatchContext = createContext<React.Dispatch<
+  React.SetStateAction<User>
+> | null>(null);
 
 export const useUserContext = () => {
   const value = useContext(UserContext);
@@ -19,12 +21,13 @@ export const useUserDispatchContext = () => {
 };
 export const UserContextProvider = ({
   children,
-  value,
 }: {
   children?: React.ReactNode;
-  value: [User, React.SetStateAction<User>];
 }) => {
-  const [user, setUser] = value;
+  const [user, setUser] = React.useState<User>({
+    name: '',
+    gender: 'other',
+  });
   return (
     <UserContext.Provider value={user}>
       <UserDispatchContext.Provider value={setUser}>

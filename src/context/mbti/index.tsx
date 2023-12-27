@@ -1,9 +1,12 @@
 'use client';
+import React from 'react';
 import { createContext, useContext } from 'react';
 
 export const MbtiContext = createContext<null>(null);
 
-export const MbtiDispatchContext = createContext<null>(null);
+export const MbtiDispatchContext = createContext<React.Dispatch<
+  React.SetStateAction<null>
+> | null>(null);
 
 export const useMbtiContext = () => {
   const value = useContext(MbtiContext);
@@ -21,9 +24,10 @@ export const MbtiContextProvider = ({
 }: {
   children?: React.ReactNode;
 }) => {
+  const [mbti, setMbti] = React.useState(null);
   return (
-    <MbtiContext.Provider value={null}>
-      <MbtiDispatchContext.Provider value={null}>
+    <MbtiContext.Provider value={mbti}>
+      <MbtiDispatchContext.Provider value={setMbti}>
         {children}
       </MbtiDispatchContext.Provider>
     </MbtiContext.Provider>
