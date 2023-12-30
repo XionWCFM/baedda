@@ -28,13 +28,15 @@ const RootPage = ({}: RootPageProps) => {
         </Text>
       </Flex>
       <Flex className="relative">
-        <Flex className="fixed  top-[50%] translate-x-[-50%] translate-y-[-50%]  left-[50%]">
-          <Image
-            className=" animate-spin"
-            {...ASSET.jamin}
-            alt={ASSET.jamin.alt}
-          />
-        </Flex>
+        <Link href={'/question'}>
+          <Flex className="fixed top-[50%] translate-x-[-50%] translate-y-[-50%]  left-[50%]">
+            <Image
+              className=" animate-spin"
+              {...ASSET.jamin}
+              alt={ASSET.jamin.alt}
+            />
+          </Flex>
+        </Link>
 
         <Box className=" animate-bounce absolute left-[40%] rounded-full px-4 py-2 bg-orange-400 text-white  font-bold ">
           끼얏호우! 당장 해야갯어!
@@ -42,7 +44,7 @@ const RootPage = ({}: RootPageProps) => {
       </Flex>
       <Flex className=" w-full  px-4">
         <Link className=" w-full" href={'/question'}>
-          <Button className=" w-full h-[100px]" radius={'full'} size={'4'}>
+          <Button className="  w-full h-[100px]" radius={'full'} size={'4'}>
             Get Started
           </Button>
         </Link>
