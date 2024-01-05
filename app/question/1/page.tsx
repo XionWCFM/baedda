@@ -1,4 +1,4 @@
-import Question1Page from '@/src/routes/question/1';
+import Question1Page from '@/src/routes/question/[id]';
 import React from 'react';
 
 interface pageProps {}
