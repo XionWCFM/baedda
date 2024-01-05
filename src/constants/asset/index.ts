@@ -1,12 +1,4 @@
-type AssetType = {
-  [key: string]: {
-    src: string;
-    alt: string;
-    width: number;
-    height: number;
-  };
-};
-export const ASSET: AssetType = {
+export const ASSET = {
   jamin: {
     src: '/jamin.jpeg',
     alt: '잼민사진',
