@@ -1,9 +1,9 @@
-import { Flex } from '@radix-ui/themes';
+import { Flex, Heading } from '@radix-ui/themes';
 import React from 'react';
 
 interface indexProps {}
 
-const QuestionPage = ({}: indexProps) => {
+const Question1Page = ({}: indexProps) => {
   return (
     <Flex
       direction={'column'}
@@ -12,10 +12,10 @@ const QuestionPage = ({}: indexProps) => {
       className=" min-h-screen min-w-full  max-h-screen pt-16 pb-12"
     >
       <Flex direction={'column'} align={'center'}>
-        dsadas
+        <Heading>안녕하세요</Heading>
       </Flex>
     </Flex>
   );
 };
 
-export default QuestionPage;
+export default Question1Page;
