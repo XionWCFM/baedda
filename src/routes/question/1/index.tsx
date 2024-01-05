@@ -1,4 +1,5 @@
 'use client';
+import LayoutWrapper from '@/src/components/ui/layout-wrapper';
 import { ASSET } from '@/src/constants/asset';
 import { Box, Button, Flex, Heading, Text } from '@radix-ui/themes';
 import Image from 'next/image';
@@ -9,12 +10,7 @@ interface indexProps {}
 
 const Question1Page = ({}: indexProps) => {
   return (
-    <Flex
-      direction={'column'}
-      align={'center'}
-      justify={'between'}
-      className=" min-h-screen max-h-screen pt-16 pb-12"
-    >
+    <LayoutWrapper>
       <Flex direction={'column'} align={'center'}>
         <Image {...ASSET.jamin1} alt="jamin" />
         <Box height={'8'} />
@@ -33,8 +29,12 @@ const Question1Page = ({}: indexProps) => {
           </Button>
         </Link>
       </Flex>
-    </Flex>
+    </LayoutWrapper>
   );
 };
 
 export default Question1Page;
+
+const twobuttonQuestion = {
+  title: '윈그제 랩시키기 vs 내가 랩하기',
+};
