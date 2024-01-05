@@ -28,7 +28,7 @@ const RootPage = ({}: RootPageProps) => {
         </Text>
       </Flex>
       <Flex className="relative">
-        <Link href={'/question/1'}>
+        <Link href={'/question/0'}>
           <Flex className="fixed top-[50%] translate-x-[-50%] translate-y-[-50%]  left-[50%]">
             <Image
               className=" animate-spin"
@@ -43,7 +43,7 @@ const RootPage = ({}: RootPageProps) => {
         </Box>
       </Flex>
       <Flex className=" w-full  px-4">
-        <Link className=" w-full" href={'/question/1'}>
+        <Link className=" w-full" href={'/question/0'}>
           <Button className="  w-full h-[100px]" radius={'full'} size={'4'}>
             Get Started
           </Button>
