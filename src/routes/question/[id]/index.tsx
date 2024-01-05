@@ -12,8 +12,8 @@ interface indexProps {
 const QuestionPage = ({ id }: indexProps) => {
   return (
     <LayoutWrapper>
-      <QuestionComponent question={QUESTION[id]['question']} />
-      <TwoButtonQuestion answer={QUESTION[id]['answer']} />
+      <QuestionComponent question={QUESTION[id]?.['question']} />
+      <TwoButtonQuestion answer={QUESTION[id]?.['answer']} />
     </LayoutWrapper>
   );
 };
