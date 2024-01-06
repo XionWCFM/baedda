@@ -1,3 +1,4 @@
+import { QUESTION } from '@/src/constants/question';
 import QuestionPage from '@/src/routes/question/[id]';
 import React from 'react';
 
@@ -10,7 +11,7 @@ interface pageProps {
 const page = ({ params: { id } }: pageProps) => {
   const parseId = Number(id);
 
-  if (isNaN(parseId) || parseId > 6) {
+  if (isNaN(parseId) || parseId > QUESTION.length - 1) {
     return null;
   }
 
