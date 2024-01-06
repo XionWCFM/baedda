@@ -11,7 +11,7 @@ interface QuestionProps {
 const QuestionComponent = ({ question }: QuestionProps) => {
   return (
     <Flex direction={'column'} align={'center'}>
-      <Image {...question.img} alt="jamin" />
+      <Image className=" w-[430px] h-[430px]" {...question.img} alt="jamin" />
       <Box height={'8'} />
       <Heading className=" px-4 text-center whitespace-pre-wrap">
         {question.title}

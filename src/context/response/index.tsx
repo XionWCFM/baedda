@@ -1,8 +1,8 @@
-import { Mbti } from '@/src/model/mbti';
+import { MbtiUnion } from '@/src/model/mbti';
 import React, { useContext } from 'react';
 
 type ResponseDataStructure = {
-  [key: string]: Mbti;
+  [key: string]: MbtiUnion;
 };
 
 const ResponseContext = React.createContext<ResponseDataStructure | null>(null);
