@@ -13,7 +13,9 @@ const QuestionComponent = ({ question }: QuestionProps) => {
     <Flex direction={'column'} align={'center'}>
       <Image {...question.img} alt="jamin" />
       <Box height={'8'} />
-      <Heading>{question.title}</Heading>
+      <Heading className=" px-4 text-center whitespace-pre-wrap">
+        {question.title}
+      </Heading>
       <Box height={'8'} />
     </Flex>
   );
