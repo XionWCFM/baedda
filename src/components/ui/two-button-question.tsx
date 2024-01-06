@@ -10,7 +10,7 @@ interface TwoButtonQuestionProps {
 const TwoButtonQuestion = ({ answer }: TwoButtonQuestionProps) => {
   return (
     <Flex direction={'column'} gap={'4'} className=" w-full px-4">
-      {answer.map((item, idx) => (
+      {answer.button.map((item, idx) => (
         <Link key={item.id} className=" w-full" href={item.href}>
           <Button
             className=" w-full"

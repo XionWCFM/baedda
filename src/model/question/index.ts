@@ -10,18 +10,21 @@ export type Question = {
       alt: string;
     };
   };
-  answer: [
-    {
-      id: string;
-      content: string;
-      type: IE | NS | TF | PJ;
-      href: string;
-    },
-    {
-      id: string;
-      content: string;
-      type: IE | NS | TF | PJ;
-      href: string;
-    },
-  ];
+  answer: {
+    pageIndex: string;
+    button: [
+      {
+        id: string;
+        content: string;
+        type: IE | NS | TF | PJ;
+        href: string;
+      },
+      {
+        id: string;
+        content: string;
+        type: IE | NS | TF | PJ;
+        href: string;
+      },
+    ];
+  };
 };
