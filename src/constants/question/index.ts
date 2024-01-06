@@ -12,11 +12,13 @@ export const QUESTION: Question[] = [
         id: 'wingje',
         type: 'I',
         content: '당연히 윈그제 랩 시켜야죠',
+        href:'question/1'
       },
       {
         id: 'naega',
         type: 'E',
         content: '내가 랩하죠 뭐..',
+        href:'question/1'
       },
     ],
   },

@@ -15,11 +15,13 @@ export type Question = {
       id: string;
       content: string;
       type: IE | NS | TF | PJ;
+      href: string;
     },
     {
       id: string;
       content: string;
       type: IE | NS | TF | PJ;
+      href: string;
     },
   ];
 };
