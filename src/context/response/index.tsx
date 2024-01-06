@@ -1,5 +1,5 @@
 import { Mbti } from '@/src/model/mbti';
-import React from 'react';
+import React, { useContext } from 'react';
 
 type ResponseDataStructure = {
   [key: string]: Mbti;
@@ -9,7 +9,6 @@ const ResponseContext = React.createContext<ResponseDataStructure | null>(null);
 const ResponseDispatchContext = React.createContext<React.Dispatch<
   React.SetStateAction<ResponseDataStructure>
 > | null>(null);
-
 
 export const ResponseProvider = ({
   children,
@@ -24,4 +23,16 @@ export const ResponseProvider = ({
       </ResponseDispatchContext.Provider>
     </ResponseContext.Provider>
   );
+};
+
+export const useResponseDispatchContext = () => {
+  const value = useContext(ResponseDispatchContext);
+  if (value === null) throw new Error('');
+  return value;
+};
+
+export const useResponseContext = () => {
+  const value = useContext(ResponseContext);
+  if (value === null) throw new Error('');
+  return value;
 };

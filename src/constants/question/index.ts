@@ -28,7 +28,7 @@ export const QUESTION: Question[] = [
   {
     question: {
       title: '나는 가라아게와 치킨의 차이점을 알고있다.',
-      img: ASSET.jamin2,
+      img: ASSET.jamin4,
     },
     answer: {
       pageIndex: '1',
