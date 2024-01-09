@@ -1,28 +1,34 @@
-import { MbtiUnion } from '../model/mbti';
+import { Mbti, MbtiUnion } from '../model/mbti';
 
 export const convertAnswerToMbti = (mbtiObject: {
   [key: string]: MbtiUnion;
-}) => {
+}): Mbti => {
   const mbtiArray = Object.values(mbtiObject);
-  let result = [0, 0, 0, 0];
+  let scoreList = [0, 0, 0, 0];
   mbtiArray.forEach((item) => {
     switch (item) {
       case 'I':
-        result[0] += 1;
+        scoreList[0] += 1;
       case 'E':
-        result[0] -= 1;
+        scoreList[0] -= 1;
       case 'N':
-        result[1] += 1;
+        scoreList[1] += 1;
       case 'S':
-        result[1] -= 1;
+        scoreList[1] -= 1;
       case 'T':
-        result[2] += 1;
+        scoreList[2] += 1;
       case 'F':
-        result[2] -= 1;
+        scoreList[2] -= 1;
       case 'P':
-        result[3] += 1;
+        scoreList[3] += 1;
       case 'J':
-        result[3] -= 1;
+        scoreList[3] -= 1;
     }
   });
+  let result = '';
+  scoreList[0] >= 0 ? (result += 'I') : (result += 'E');
+  scoreList[1] >= 0 ? (result += 'N') : (result += 'S');
+  scoreList[2] >= 0 ? (result += 'T') : (result += 'F');
+  scoreList[3] >= 0 ? (result += 'P') : (result += 'J');
+  return result as Mbti;
 };
