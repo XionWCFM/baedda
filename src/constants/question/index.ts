@@ -94,4 +94,50 @@ export const QUESTION: Question[] = [
       ],
     },
   },
+  {
+    question: {
+      title: '강현구 \n vs \n 약미래면',
+      img: ASSET.jamin1,
+    },
+    answer: {
+      pageIndex: '4',
+      button: [
+        {
+          id: 'sagi',
+          type: 'E',
+          content: '강현구',
+          href: '/question/5',
+        },
+        {
+          id: 'nosagi',
+          type: 'I',
+          content: '약미래면',
+          href: '/question/5',
+        },
+      ],
+    },
+  },
+  {
+    question: {
+      title: '콩의 mbti는 이것이다.',
+      img: ASSET.jamin1,
+    },
+    answer: {
+      pageIndex: '5',
+      button: [
+        {
+          id: 'sagi',
+          type: 'N',
+          content: 'ENFP',
+          href: '/question/6',
+        },
+        {
+          id: 'nosagi',
+          type: 'S',
+          content: 'ENTP',
+          href: '/question/6',
+        },
+      ],
+    },
+  },
 ];
